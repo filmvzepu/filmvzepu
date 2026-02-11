@@ -2,8 +2,10 @@
 <html lang="sl">
 <head>
   <meta charset="UTF-8">
-  <title>Film v žepu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film v žepu</title>
+  <meta name="description" content="Delavnice filmskega ustvarjanja za radovedne mlade.">
+
   <style>
     body {
       margin: 0;
@@ -16,39 +18,75 @@
       text-align: center;
       color: #111;
     }
+
     .container {
-      max-width: 600px;
+      max-width: 700px;
       padding: 20px;
     }
-    h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
+
+    .logo {
+      max-width: 420px;
+      width: 100%;
+      margin-bottom: 30px;
     }
+
     p {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.6;
+      margin-bottom: 35px;
     }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
     .button {
-      display: inline-block;
-      margin-top: 20px;
       padding: 12px 24px;
-      border: 1px solid black;
       text-decoration: none;
-      color: black;
+      font-weight: 600;
+      border: 2px solid black;
       transition: 0.3s;
     }
-    .button:hover {
+
+    .primary {
+      background: #d01919;
+      color: white;
+      border: none;
+    }
+
+    .primary:hover {
+      background: #b51616;
+    }
+
+    .secondary:hover {
       background: black;
       color: white;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <h1>Film v žepu</h1>
-    <p>Delavnice filmskega ustvarjanja za otroke in mladostnike.</p>
-    <p>Za radovedne mlade, ki radi snemajo, ustvarjajo in pripovedujejo zgodbe.</p>
-    <a href="mailto:info@filmvzepu.com" class="button">Piši nam</a>
+    
+    <img src="FilmVzepu_LajnerText_Transparent.png" alt="Film v žepu" class="logo">
+
+    <p>
+      Delavnice filmskega ustvarjanja za radovedne mlade, ki radi snemajo, ustvarjajo in pripovedujejo zgodbe.
+    </p>
+
+    <div class="buttons">
+      <a href="https://forms.gle/dKE5eRRwTKYt4oGb9" target="_blank" class="button primary">
+        Prijavi se
+      </a>
+
+      <a href="mailto:info@filmvzepu.com" class="button secondary">
+        Piši nam
+      </a>
+    </div>
+
   </div>
 </body>
 </html>
