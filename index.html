@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Film v žepu | Filmske delavnice za mlade</title>
+
   <link rel="icon" type="image/png" href="FilmVzepu_Favicon_Transparent.png?v=2">
+
   <meta name="description" content="Praktične filmske delavnice za mlade. Ustvarjanje kratkih filmov s telefonom: ideja, snemanje, montaža in pripovedovanje zgodb.">
 
   <style>
@@ -39,7 +42,7 @@
       font-size: 19px;
       line-height: 1.45;
       margin: 0 auto;
-      font-weight: 500;
+      font-weight: 700;
       letter-spacing: -0.01em;
       max-width: 680px;
     }
@@ -89,21 +92,6 @@
       cursor: pointer;
     }
 
-    .social-text {
-      margin: 0 auto 18px;
-      max-width: 560px;
-      font-size: 16px;
-      line-height: 1.45;
-      font-weight: 500;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
     .button {
       padding: 14px 24px;
       text-decoration: none;
@@ -138,139 +126,51 @@
       border-color: black;
     }
 
-    .tertiary {
-      background: transparent;
-      color: #111;
-    }
-
-    .tertiary:hover {
-      background: #111;
-      color: white;
-    }
-
-    /* POP-UP */
-
-    .popup-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.45);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      z-index: 1000;
-    }
-
-    .popup-overlay.active {
-      display: flex;
-    }
-
-    .popup {
-      position: relative;
-      max-width: 460px;
-      width: 100%;
-      background: white;
-      border: 2px solid #d01919;
-      border-radius: 18px;
-      padding: 28px 22px 24px;
-      box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18);
-    }
-
-    .popup h2 {
-      margin: 0 0 10px;
-      font-size: 24px;
-      line-height: 1.15;
-      color: #d01919;
-      letter-spacing: -0.02em;
-    }
-
-    .popup p {
-      margin: 0;
+    .social-text {
+      margin: 0 auto 16px;
+      max-width: 560px;
       font-size: 16px;
       line-height: 1.45;
-      font-weight: 500;
-    }
-
-    .popup-close {
-      position: absolute;
-      top: 10px;
-      right: 12px;
-      background: transparent;
-      border: none;
-      font-size: 28px;
-      line-height: 1;
-      cursor: pointer;
-      color: #111;
+      font-weight: 700;
     }
 
     .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
 
-  display: flex;
+    .social-icon-link {
+      width: 46px;
+      height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.2s ease;
+    }
 
-  justify-content: center;
+    .social-icon-link:hover {
+      transform: translateY(-2px);
+      opacity: 0.85;
+    }
 
-  align-items: center;
+    .social-icon {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+    }
 
-  gap: 22px;
-
-  flex-wrap: wrap;
-
-  margin-bottom: 28px;
-
-}
-
-.social-icon-link {
-
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  transition: 0.2s ease;
-
-}
-.social-icon-link {
-
-  width: 46px;
-
-  height: 46px;
-
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  transition: 0.2s ease;
-
-}
-
-.social-icon {
-
-  max-width: 100%;
-
-  max-height: 100%;
-
-  object-fit: contain;
-
-  display: block;
-
-}
-
-.footer {
-
-  margin-top: 28px;
-
-  font-size: 13px;
-
-  line-height: 1.4;
-
-  font-weight: 500;
-
-  color: #555;
-
-}
+    .footer {
+      margin-top: 28px;
+      font-size: 13px;
+      line-height: 1.4;
+      font-weight: 500;
+      color: #555;
+    }
 
     @media (max-width: 600px) {
       .container {
@@ -286,20 +186,13 @@
         font-size: 17px;
       }
 
-      .workshop-block h2,
-      .popup h2 {
+      .workshop-block h2 {
         font-size: 20px;
       }
 
       .workshop-block p,
-      .popup p,
       .social-text {
         font-size: 15px;
-      }
-
-      .button {
-        font-size: 15px;
-        padding: 12px 20px;
       }
 
       .newsletter-form input {
@@ -310,27 +203,39 @@
       .newsletter-form button {
         width: 100%;
       }
+
+      .button {
+        font-size: 15px;
+        padding: 12px 20px;
+      }
+
+      .social-icon-link {
+        width: 42px;
+        height: 42px;
+      }
+
+      .footer {
+        font-size: 12px;
+      }
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    
+
     <img src="FilmVzepu_LajnerText_Transparent.png" alt="Film v žepu - filmske delavnice za mlade" class="logo">
 
     <div class="intro">
       <p>
-        <p>
-          Filmske delavnice za mlade, kjer telefon postane kamera, ideja postane zgodba, zgodba pa kratek film.
-        </p>
+        Filmske delavnice za mlade, kjer iz telefona, ideje in zgodbe nastane kratek film.
       </p>
     </div>
 
     <div class="workshop-block">
       <h2>Prejmi obvestilo o naslednji delavnici</h2>
       <p>
-        Pusti nam svoj e-mail in obvestili te bomo, ko bo razpisan nov brezplačen termin.
+        Pusti svoj e-mail in obvestili te bomo, ko bo razpisan nov brezplačen termin.
       </p>
 
       <form class="newsletter-form" onsubmit="subscribeToNewsletter(event)">
@@ -343,13 +248,13 @@
       Spremljaj nas na družbenih omrežjih.
     </p>
 
-    <div class="buttons">
-      <a href="https://www.instagram.com/filmvzepu/" target="_blank" class="button primary">
-        Instagram
+    <div class="social-links">
+      <a href="https://www.instagram.com/filmvzepu/" target="_blank" class="social-icon-link" aria-label="Film v žepu na Instagramu">
+        <img src="instagram-logo.png" alt="Instagram" class="social-icon">
       </a>
 
-      <a href="https://www.tiktok.com/@filmvzepu" target="_blank" class="button tertiary">
-        TikTok
+      <a href="https://www.tiktok.com/@filmvzepu" target="_blank" class="social-icon-link" aria-label="Film v žepu na TikToku">
+        <img src="tiktok-logo.png" alt="TikTok" class="social-icon">
       </a>
 
       <a href="mailto:filmvzepu@gmail.com" class="button secondary">
@@ -357,28 +262,14 @@
       </a>
     </div>
 
-  </div>
+    <footer class="footer">
+      © Film v žepu · Ljubljana · filmvzepu@gmail.com
+    </footer>
 
-  <div class="popup-overlay" id="newsletterPopup">
-    <div class="popup">
-      <button class="popup-close" onclick="closePopup()" aria-label="Zapri">&times;</button>
-
-      <h2>Želiš izvedeti za naslednjo delavnico?</h2>
-      <p>
-        Pusti nam svoj e-mail in obvestili te bomo, ko bo razpisan nov termin.
-      </p>
-
-      <form class="newsletter-form" onsubmit="subscribeToNewsletter(event)">
-        <input type="email" name="email" placeholder="Tvoj e-mail" required>
-        <button type="submit" class="button primary">Obvesti me</button>
-      </form>
-    </div>
   </div>
 
   <script>
     const newsletterUrl = "https://magic.beehiiv.com/v1/8b7389c4-2b47-40eb-9591-e5b50c3617b1?email={{email}}";
-    const popupKey = "filmvzepu_newsletter_popup_closed";
-    const sevenDays = 7 * 24 * 60 * 60 * 1000;
 
     function subscribeToNewsletter(event) {
       event.preventDefault();
@@ -390,35 +281,9 @@
 
       const finalUrl = newsletterUrl.replace("{{email}}", encodeURIComponent(email));
 
-      localStorage.setItem(popupKey, Date.now().toString());
       window.open(finalUrl, "_blank");
-
-      closePopup();
       form.reset();
     }
-
-    function closePopup() {
-      const popup = document.getElementById("newsletterPopup");
-      popup.classList.remove("active");
-      localStorage.setItem(popupKey, Date.now().toString());
-    }
-
-    function shouldShowPopup() {
-      const lastClosed = localStorage.getItem(popupKey);
-
-      if (!lastClosed) return true;
-
-      const timePassed = Date.now() - Number(lastClosed);
-      return timePassed > sevenDays;
-    }
-
-    window.addEventListener("load", function () {
-      if (shouldShowPopup()) {
-        setTimeout(function () {
-          document.getElementById("newsletterPopup").classList.add("active");
-        }, 5000);
-      }
-    });
   </script>
 </body>
 </html>
