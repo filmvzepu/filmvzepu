@@ -203,6 +203,75 @@
       color: #111;
     }
 
+    .social-links {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 22px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 28px;
+
+}
+
+.social-icon-link {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  transition: 0.2s ease;
+
+}
+.social-icon-link {
+
+  width: 46px;
+
+  height: 46px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  transition: 0.2s ease;
+
+}
+
+.social-icon {
+
+  max-width: 100%;
+
+  max-height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+
+}
+
+.footer {
+
+  margin-top: 28px;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  font-weight: 500;
+
+  color: #555;
+
+}
+
     @media (max-width: 600px) {
       .container {
         padding: 24px 18px;
@@ -259,9 +328,9 @@
     </div>
 
     <div class="workshop-block">
-      <h2>Trenutno ni razpisane nove delavnice</h2>
+      <h2>Prejmi obvestilo o naslednji delavnici</h2>
       <p>
-        Prejmi obvestilo o naslednji brezplačni filmski delavnici.
+        Pusti nam svoj e-mail in obvestili te bomo, ko bo razpisan nov brezplačen termin.
       </p>
 
       <form class="newsletter-form" onsubmit="subscribeToNewsletter(event)">
@@ -271,7 +340,7 @@
     </div>
 
     <p class="social-text">
-      Za utrinke z delavnic, nove termine in filmske ideje nas spremljaj na družabnih omrežjih.
+      Spremljaj nas na družbenih omrežjih.
     </p>
 
     <div class="buttons">
